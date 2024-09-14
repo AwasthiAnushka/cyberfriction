@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Cyberfiction</title>
+    <style>
+        /* General Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #1c1c1c;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        h1, h2 {
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: justify;
+        }
+
+        /* Header */
+        header {
+            background-color: #000;
+            padding: 20px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            font-size: 36px;
+            letter-spacing: 2px;
+            color: limegreen; /* Green color for the heading */
+            white-space: nowrap;
+            overflow: hidden;
+            animation: slideIn 10s linear infinite;
+        }
+
+        /* Green Moving Animation for Heading */
+        @keyframes slideIn {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Section Animation */
+        .section {
+            padding: 60px 20px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: slideUp 1s ease-out forwards;
+        }
+
+        .section:nth-child(odd) {
+            background-color: #2b2b2b;
+        }
+
+        .section:nth-child(even) {
+            background-color: #333;
+        }
+
+        /* Zoom In and Color Change Animation */
+        .section h2 {
+            font-size: 32px;
+            color: #ff1493; /* Dark pink color */
+            opacity: 0;
+            transform: scale(0.8);
+            animation: zoomIn 1.5s ease forwards;
+        }
+
+        /* Keyframes for Zooming in one by one */
+        @keyframes zoomIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Delay for each heading */
+        .section:nth-child(1) h2 {
+            animation-delay: 0.5s;
+        }
+
+        .section:nth-child(2) h2 {
+            animation-delay: 1.5s;
+        }
+
+        .section:nth-child(3) h2 {
+            animation-delay: 2.5s;
+        }
+
+        .section:nth-child(4) h2 {
+            animation-delay: 3.5s;
+        }
+
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>About Cyberfiction</h1>
+</header>
+
+<section class="section">
+    <h2>What is Cyberfiction?</h2>
+    <p>Cyberfiction is an innovative digital ecosystem where imagination meets reality in the virtual world. It's a decentralized community driven by creative storytelling and collaborative world-building. Here, we empower individuals to create, own, and share their stories in a metaverse where possibilities are limitless.</p>
+</section>
+
+<section class="section">
+    <h2>Our Mission</h2>
+    <p>Our mission is to bridge the gap between fiction and reality by enabling creators to explore their wildest imaginations. Cyberfiction aims to be a playground where stories aren't just told but lived. We strive to maintain a community that values creativity, cooperation, and the spirit of adventure, while fostering good humanity in all its interactions.</p>
+</section>
+
+<section class="section">
+    <h2>Join the Community</h2>
+    <p>Become a part of Cyberfiction today! Whether you're a writer, artist, or just someone who loves a good story, there's a place for you in our community. Collaborate with like-minded individuals, create new worlds, and be a part of the future of storytelling.</p>
+</section>
+
+<section class="section">
+    <h2>Future Vision</h2>
+    <p>Looking forward, Cyberfiction seeks to expand into new realms of digital interaction. We're continuously evolving, integrating new technologies to enhance the experience of our users. Join us on this journey as we explore the endless possibilities of the metaverse.</p>
+</section>
+
+</body>
+</html>

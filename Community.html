@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Section | Cyberfiction</title>
+    <style>
+        /* General Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: justify;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #1e1e1e;
+            padding: 40px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            font-size: 48px;
+            background: linear-gradient(90deg, #00ff99, #00ccff);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: zoomInHeader 2s ease-out forwards;
+        }
+
+        @keyframes zoomInHeader {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Community Section */
+        .community-section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 0 20px rgba(0, 255, 153, 0.2), 0 0 40px rgba(0, 204, 255, 0.2);
+        }
+
+        .community-section h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #00ffcc;
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .forum-posts {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .post {
+            background-color: #282828;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .post:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0, 255, 153, 0.3), 0 0 30px rgba(0, 204, 255, 0.3);
+        }
+
+        .post h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #00ff99;
+        }
+
+        .post p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #ddd;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 36px;
+            }
+
+            .community-section h2 {
+                font-size: 28px;
+            }
+
+            .post h3 {
+                font-size: 20px;
+            }
+
+            .post p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Community Section</h1>
+</header>
+
+<section class="community-section">
+    <h2>Join the Conversation</h2>
+    <p>Welcome to the Cyberfiction Community! This is your space to share ideas, discuss your favorite topics, and connect with like-minded creators. Whether you're brainstorming new storylines, seeking feedback, or simply want to chat, this is the place for you.</p>
+
+    <div class="forum-posts">
+        <div class="post">
+            <h3>New Story Ideas</h3>
+            <p>Share your latest story ideas and get feedback from the community. Whether it's a plot twist or a new character, we'd love to hear what you're working on!</p>
+        </div>
+        <div class="post">
+            <h3>Collaborations</h3>
+            <p>Looking to team up with other creators? Post your project details here and find others who share your passion for storytelling.</p>
+        </div>
+        <div class="post">
+            <h3>General Discussion</h3>
+            <p>Have a question, suggestion, or just want to chat about anything? This is the place for all general discussions related to Cyberfiction and beyond.</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
